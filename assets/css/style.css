@@ -1,0 +1,70 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+header {
+  background: #083a2d;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-height: 60px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, #083a2d, #166d4d);
+  color: #fff;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+}
+
+.intro {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  color: #083a2d;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #083a2d;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #fff;
+}
