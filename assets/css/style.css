@@ -68,3 +68,26 @@ footer {
 footer a {
   color: #fff;
 }
+
+.book-list {
+  margin-top: 2rem;
+}
+
+.book-list article {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-list h2 {
+  color: #083a2d;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.book-list p {
+  margin: 0;
+  text-align: left;
+}
