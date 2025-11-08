@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Declassified technical summary of photoreceptor pathways and plant toxin biosynthesis featured in Dark Recipe — A Knox Ramsey Thriller.">
+<title>Knox Ramsey Field Guide — Plant Biology</title>
+
+<!-- ====== CORE STYLES ====== -->
+<style>
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color:#121614;
+  color:#e8eef5;
+  display:flex;
+  min-height:100vh;
+}
+
+/* ===== Sidebar Binder ===== */
+#sidebar{
+  width:18%;
+  min-width:220px;
+  background:#1a1e1c;
+  border-right:2px solid #2b332f;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:1.5rem 0;
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  overflow-y:auto;
+}
+#sidebar img.logo{
+  width:180px;
+  height:auto;
+  margin-bottom:1rem;
+}
+#sidebar h1{
+  font-size:0.9rem;
+  letter-spacing:1.5px;
+  color:#f0b85d;
+  margin-bottom:1.2rem;
+  text-transform:uppercase;
+  border-bottom:1px solid #2b332f;
+  padding-bottom:0.5rem;
+  text-align:center;
+}
+nav ul{
+  list-style:none;
+  width:100%;
+  padding:0 1rem;
+}
+nav ul li{margin:0.6rem 0;}
+nav ul li a{
+  display:block;
+  color:#e8eef5;
+  text-decoration:none;
+  padding:0.4rem 0.8rem;
+  border-left:3px solid transparent;
+  transition:all 0.2s ease-in-out;
+  font-size:0.9rem;
+}
+nav ul li a:hover{background-color:#202522;border-left:3px solid #f0b85d;}
+nav ul li.active a{border-left:3px solid #5ee2c3;background-color:#202522;color:#5ee2c3;}
+
+/* Scrollbar subtle */
+#sidebar::-webkit-scrollbar{width:6px;}
+#sidebar::-webkit-scrollbar-thumb{background:#333;border-radius:3px;}
+
+/* ===== Main Content Wrapper ===== */
+main{
+  margin-left:18%;
+  width:82%;
+  padding:2rem 3rem;
+  line-height:1.6;
+}
+
+/* Utility classes */
+.section-title{
+  font-family:"Merriweather",serif;
+  font-size:1.4rem;
+  color:#5ee2c3;
+  margin:2rem 0 1rem 0;
+  border-bottom:1px solid #2b332f;
+  padding-bottom:0.3rem;
+}
+hr.spectral{
+  height:2px;
+  border:none;
+  background:linear-gradient(90deg,#0052ff,#00ff99,#ffcc00,#ff0000);
+  margin:1.5rem 0;
+}
+
+/* Table styling shared */
+ table th, table td { padding:0.55rem 0.6rem; text-align:left; }
+ table thead th { font-weight:600; font-size:0.75rem; letter-spacing:0.5px; }
+ table tbody tr { border-bottom:1px solid #222726; }
+ table tbody tr:last-child { border-bottom:none; }
+
+/* Responsive adjustments */
+@media (max-width:960px){
+  #sidebar{position:static;width:100%;flex-direction:row;flex-wrap:wrap;min-height:auto;padding:1rem 0;}
+  #sidebar h1{width:100%;order:2;margin:0.5rem 0 0;}
+  #sidebar img.logo{order:1;margin:0 auto 0.5rem;}
+  nav ul{display:flex;flex-wrap:wrap;justify-content:center;padding:0;}
+  nav ul li{margin:0.3rem;}
+  main{margin-left:0;width:100%;padding:1.5rem 1.25rem;}
+  svg#bio-diagram{max-width:100%;}
+}
+</style>
+</head>
+
+<body>
+  <!-- ===== SIDEBAR ===== -->
+  <aside id="sidebar">
+    <img src="assets/images/knoxramsey_logo.jpeg" alt="Knox Ramsey Logo" class="logo">
+    <h1>KNOX RAMSEY FIELD GUIDE</h1>
+    <nav>
+      <ul>
+        <li class="active"><a href="biology.html">Plant Biology</a></li>
+        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+        <li><a href="farm.html">The Farm</a></li>
+        <li><a href="government.html">Government Structures</a></li>
+        <li><a href="intelligence.html">Intelligence Network</a></li>
+        <li><a href="index.html">Global Index</a></li>
+        <li><a href="about.html">About Knox</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- ===== MAIN CONTENT START ===== -->
+  <main>
+    <header>
+      <h2 style="font-family:'Merriweather',serif;font-size:1.8rem;color:#f0b85d;">
+        Declassified Extract 04-A — Biochemical Pathways Under Artificial Spectral Stress
+      </h2>
+      <p style="margin-top:0.8rem;color:#aaa;font-style:italic;">
+        This section draws upon verified NIH and CDC plant toxicology research to illustrate how real biochemical pathways can be destabilized through environmental control systems. 
+        The events depicted in <em>Dark Recipe</em> extrapolate from these mechanisms.
+      </p>
+    </header>
+
+    <!-- ===== SECTION: Spectral Response Table ===== -->
+    <section id="spectral-response">
+      <h3 class="section-title">Spectral Response &amp; Photoreceptor Activation</h3>
+      <p>
+        Wavelength ranges drive specific receptor cascades in plant tissue, influencing enzyme transcription and secondary-metabolite synthesis.
+        The table summarizes these responses under controlled-environment conditions.
+      </p>
+
+      <table id="table-spectral" style="width:100%;margin-top:1rem;border-collapse:collapse;font-size:0.9rem;">
+        <thead style="background:#202522;">
+          <tr>
+            <th>Wavelength (nm)</th>
+            <th>Receptor</th>
+            <th>Activated Enzyme</th>
+            <th>Resulting Compound</th>
+            <th>Physiological / Human Effect</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#132022;">
+            <td style="color:#00aaff;">430 – 470 (Blue)</td>
+            <td>Cryptochrome / Phototropin</td>
+            <td>PAL ↑ (Phenylalanine Ammonia-Lyase)</td>
+            <td>Phenolic aldehydes</td>
+            <td>Mild oxidative stress / precursor to furanocoumarins</td>
+          </tr>
+          <tr>
+            <td style="color:#ff6666;">640 – 670 (Red)</td>
+            <td>Phytochrome B</td>
+            <td>Terpene synthase ↑</td>
+            <td>Limonene, geraniol</td>
+            <td>Respiratory irritation at high volatility</td>
+          </tr>
+          <tr style="background:#132022;">
+            <td style="color:#ff3366;">700 – 750 (Far-Red)</td>
+            <td>Phytochrome A</td>
+            <td>Regulatory shift in PAL balance</td>
+            <td>Furanocoumarins ↑</td>
+            <td>Phototoxic dermatitis risk</td>
+          </tr>
+          <tr>
+            <td style="color:#cc99ff;">320 – 400 (UV-A/B)</td>
+            <td>UVR8</td>
+            <td>Cross-linking enzymes ↑</td>
+            <td>Psoralens (bergapten, xanthotoxin)</td>
+            <td>Systemic photosensitivity post-consumption</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr class="spectral">
+
+    <!-- ===== SECTION: Biochemical Pathway Diagram ===== -->
+    <section id="diagram">
+      <h3 class="section-title">Biochemical Cascade — From Light Input to Phototoxic Outcome</h3>
+      <svg id="bio-diagram" viewBox="0 0 800 420" style="width:100%;max-width:800px;margin-top:1rem;">
+        <style>
+          .node{fill:#24302a;stroke:#5ee2c3;stroke-width:1.5px;cursor:pointer;}
+          .label{fill:#e8eef5;font-size:12px;text-anchor:middle;}
+          .edge{stroke:#6fffb8;stroke-width:2px;fill:none;marker-end:url(#arrow);}
+          .edge.toxic{stroke:#f0b85d;}
+          .hovered{stroke:#ff5555;stroke-width:3px;}
+        </style>
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#6fffb8"/>
+          </marker>
+        </defs>
+
+        <!-- Nodes -->
+        <rect class="node" id="n1" x="50" y="160" width="120" height="40" rx="6"/>
+        <text class="label" x="110" y="185">Light Input</text>
+
+        <rect class="node" id="n2" x="230" y="160" width="130" height="40" rx="6"/>
+        <text class="label" x="295" y="185">Photoreceptors</text>
+
+        <rect class="node" id="n3" x="410" y="160" width="140" height="40" rx="6"/>
+        <text class="label" x="480" y="185">ROS Burst</text>
+
+        <rect class="node" id="n4" x="590" y="110" width="140" height="40" rx="6"/>
+        <text class="label" x="660" y="135">PAL Up-regulation</text>
+
+        <rect class="node" id="n5" x="590" y="230" width="140" height="40" rx="6"/>
+        <text class="label" x="660" y="255">Furanocoumarins ↑</text>
+
+        <rect class="node" id="n6" x="590" y="330" width="140" height="40" rx="6"/>
+        <text class="label" x="660" y="355">Phototoxic Outcome</text>
+
+        <!-- Edges -->
+        <path class="edge" d="M170,180 L230,180"/>
+        <path class="edge" d="M360,180 L410,180"/>
+        <path class="edge" d="M550,180 L590,130" />
+        <path class="edge" d="M550,180 L590,250" />
+        <path class="edge toxic" d="M590,270 L590,330" />
+
+        <!-- Interaction handled by page script at bottom -->
+      </svg>
+      <p style="margin-top:1rem;color:#aaa;font-size:0.9rem;">
+        Hover over nodes to trace signal transduction from photoreceptors to enzymatic response and compound synthesis.
+      </p>
+    </section>
+
+    <hr class="spectral">
+
+    <!-- ===== SECTION: Environmental Stress Amplifiers ===== -->
+    <section id="amplifiers">
+      <h3 class="section-title">Environmental Stress Amplifiers</h3>
+      <p>Sub-optimal nutrient or climate conditions amplify oxidative load and alter secondary-metabolite ratios.</p>
+
+      <table id="table-env" style="width:100%;margin-top:1rem;border-collapse:collapse;font-size:0.9rem;">
+        <thead style="background:#202522;">
+          <tr>
+            <th>Condition</th>
+            <th>Observed Effect on ROS / PAL</th>
+            <th>Severity Index (0-1)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#132022;">
+            <td>Nitrogen limitation</td>
+            <td>Increased PAL activity / elevated phenolic pathway flux</td>
+            <td>0.7</td>
+          </tr>
+          <tr>
+            <td>Iron deficit</td>
+            <td>Reduced ROS quenching capacity / sustained oxidative stress</td>
+            <td>0.6</td>
+          </tr>
+          <tr style="background:#132022;">
+            <td>Manganese deficit</td>
+            <td>Impaired superoxide dismutase / amplified H₂O₂ accumulation</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Temperature oscillation &gt; ±6 °C</td>
+            <td>Destabilized enzyme kinetics / stress protein expression</td>
+            <td>0.8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr class="spectral">
+
+    <!-- ===== SECTION: Field Notes ===== -->
+    <section id="field-notes">
+      <h3 class="section-title">Field Notes — Declassified Extracts</h3>
+      <p>Archived excerpts from system logs and post-incident analyses.</p>
+
+      <div class="note" style="margin:1rem 0;padding:0.8rem;border:1px solid #2b332f;background:#181d1b;">
+        <details>
+          <summary style="cursor:pointer;color:#5ee2c3;font-weight:bold;">Extract 3A — FarmCore GH-3 (03 / 24 / 26)</summary>
+          <p style="margin-top:0.6rem;font-size:0.9rem;">
+            ROS Index 0.71 &gt; Safe Limit 0.60. PAL transcription persisted 11 h post-lights-off.  
+            Operator Action: Safe Mode enforced.  
+            <br>Cross-check log ID: GH3-21-D41 | Sensor Δt 4.2 %.
+          </p>
+        </details>
+      </div>
+
+      <div class="note" style="margin:1rem 0;padding:0.8rem;border:1px solid #2b332f;background:#181d1b;">
+        <details>
+          <summary style="cursor:pointer;color:#5ee2c3;font-weight:bold;">Extract 3B — DOT Containment Brief (Geneva +4 Days)</summary>
+          <p style="margin-top:0.6rem;font-size:0.9rem;">
+            37 of 43 highway loads interdicted (&gt; 86 %). 
+            Furanocoumarin content &gt; 0.15 mg kg⁻¹ in sample lots.  
+            Phototoxic index classified <em>Level 2 Hazard</em>.  
+            Verification via Portal Chain-of-Custody record #240316B.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <hr class="spectral">
+
+    <!-- ===== SECTION: Clinical Correlates ===== -->
+    <section id="clinical">
+      <h3 class="section-title">Clinical Correlates — Human Physiology</h3>
+      <ul style="margin-top:0.6rem;font-size:0.9rem;">
+        <li>Psoralen exposure → delayed erythema under UV-A (320–400 nm).</li>
+        <li>Systemic ingestion → phototoxic dermatitis, ocular sensitivity.</li>
+        <li>Inhaled terpenes (geraniol/limonene) → mucosal irritation, mild neuro-stimulation.</li>
+        <li>Chronic oxidative load → hepatic stress via cytochrome P450 overactivity.</li>
+      </ul>
+    </section>
+
+    <hr class="spectral">
+
+    <!-- ===== SECTION: References ===== -->
+    <section id="references">
+      <h3 class="section-title">References (Declassified Sources)</h3>
+
+      <div class="ref" style="margin-top:1rem;">
+        <details>
+          <summary style="cursor:pointer;color:#f0b85d;font-weight:bold;">NIH / NCBI Primary Sources</summary>
+          <ul style="margin-top:0.5rem;font-size:0.85rem;color:#ccc;">
+            <li>U.S. National Library of Medicine — Phenylalanine Ammonia-Lyase Regulation (2023).</li>
+            <li>NIH PubChem Compound Summary: Psoralen (CID 6199).</li>
+            <li>NCBI PMC Article ID PMC431521 — Reactive Oxygen Species in Plant Stress Signaling.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary style="cursor:pointer;color:#f0b85d;font-weight:bold;">CDC / USDA Supplementary Data</summary>
+          <ul style="margin-top:0.5rem;font-size:0.85rem;color:#ccc;">
+            <li>CDC Occupational Dermatitis Bulletin — Photosensitizing Agents (2022).</li>
+            <li>USDA ARS Plant Stress Physiology Report (2024).</li>
+            <li>USDA FSIS Analytical Method No. 182-FM — Coumarin Derivatives.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <hr class="spectral">
+
+    <!-- ===== SECTION: See Also ===== -->
+    <section id="see-also">
+      <h3 class="section-title">See Also</h3>
+      <ul style="font-size:0.9rem;">
+        <li><a href="cybersecurity.html" style="color:#5ee2c3;text-decoration:none;">Cybersecurity — Threat Vectors &amp; Containment</a></li>
+        <li><a href="farm.html" style="color:#5ee2c3;text-decoration:none;">The Farm — Automation &amp; Control Systems</a></li>
+        <li><a href="government.html" style="color:#5ee2c3;text-decoration:none;">Government Structures — Crisis Response Architecture</a></li>
+      </ul>
+    </section>
+
+    <hr class="spectral">
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="margin-top:2rem;font-size:0.8rem;color:#888;">
+      <p>© 2025 CBW Mangrove | Knox Ramsey Field Guide | Declassified Technical Archive</p>
+    </footer>
+  </main>
+
+  <!-- ===== LIGHT JS INTERACTIVITY ===== -->
+  <script>
+    // Sortable tables
+    document.querySelectorAll('table thead').forEach(head=>{
+      head.addEventListener('click',e=>{
+        const th=e.target.closest('th');
+        if(!th)return;
+        const table=head.parentElement.parentElement; // thead -> table
+        const idx=Array.from(th.parentElement.children).indexOf(th);
+        const rows=Array.from(table.querySelectorAll('tbody tr'));
+        const asc=!th.asc;
+        rows.sort((a,b)=>{
+          const A=a.children[idx].innerText.trim();
+          const B=b.children[idx].innerText.trim();
+          return asc?A.localeCompare(B,undefined,{numeric:true}):B.localeCompare(A,undefined,{numeric:true});
+        });
+        rows.forEach(r=>table.querySelector('tbody').appendChild(r));
+        th.asc=asc;
+      });
+    });
+
+    // Hover highlight for SVG nodes (moved from inline SVG script)
+    (function(){
+      const svg=document.getElementById('bio-diagram');
+      if(!svg) return;
+      svg.querySelectorAll('.node').forEach(n=>{
+        n.addEventListener('mouseenter',()=>n.classList.add('hovered'));
+        n.addEventListener('mouseleave',()=>n.classList.remove('hovered'));
+      });
+    })();
+  </script>
+</body>
+</html>
