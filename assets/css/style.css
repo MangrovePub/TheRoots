@@ -235,6 +235,41 @@ main {
   font-size: 0.95rem;
 }
 
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.badge.coming-soon {
+  background: #fff7e6;
+  color: #7a4e00;
+  border: 1px solid #f5d08a;
+}
+
+.badge.fiction {
+  background: #e8ecff;
+  color: #21306b;
+  border: 1px solid #b8c3ff;
+}
+
+.badge.nonfiction {
+  background: #e6fff6;
+  color: #0d5b46;
+  border: 1px solid #9ee4cf;
+}
+
+.badge.series {
+  background: #eef2f6;
+  color: #3a4856;
+  border: 1px solid #cfd7df;
+}
+
 /* Footer */
 footer {
   text-align: center;
