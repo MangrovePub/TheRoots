@@ -32,7 +32,7 @@ body {
 
 .nav-logo {
   max-height: 50px;
-  filter: invert(1);
+  /* Removed invert filter to preserve transparent logo appearance */
 }
 
 .nav-links a {
