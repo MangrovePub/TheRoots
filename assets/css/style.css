@@ -33,6 +33,7 @@ body {
 .nav-logo {
   max-height: 50px;
   /* Removed invert filter to preserve transparent logo appearance */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
 }
 
 .nav-links a {
@@ -84,8 +85,8 @@ body {
   max-width: 600px;
   display: block;
   margin: 2rem auto;
-  filter: none;
-  opacity: 0.95;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.28));
+  opacity: 0.98;
 }
 
 .headline {
@@ -288,7 +289,7 @@ footer::before {
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
-  background-image: url('assets/images/engraving_12x18in_1bit.png');
+  background-image: url('../images/engraving_12x18in_1bit.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
